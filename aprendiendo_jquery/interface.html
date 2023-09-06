@@ -36,11 +36,70 @@
 
         ul .ui-selecting {background-color: green;}
         ul .ui-selected {background-color: blue;}
+
+        #elemento-movido {
+            width: 100px;
+            height: 100px;
+            border: 4px solid red;
+        }
+
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 4px solid green;
+        }
+
+        .caja-efectos {
+            background-color: lightblue;
+            float: none;
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <h1>Aprendiendo jQuery con Victor Robles WEB - Más metodos / Textos</h1>
+
+    <hr/>
+    <h3>Tooltip</h3>
+
+    <a href="#" title="Acceder a la seccion de mis datos">Mis datos</a>
+    <a href="#" title="Logueate en esta web">Identificarse</a>
+    <a href="#" title="Ver todos mis amigos">Amigos</a>
+    <hr/>
+
+    <h3>Cuadros de dialogo</h3>
+    <button id="lanzar-popup">Lánzame</button>
+    <div id="popup" title="¿Estás seguro?" style="display: none">
+        <p>
+            Si continuas en el curso aprenderás mucho de JS inevitablemente
+        </p>
+    </div>
+    <hr/>
+
+    <h3>Calendario</h3>
+    <input type="text" id="calendario" />
+    <hr/>
+
+    <h3>Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">Hola soy la primera pestaña</div>
+        <div id="tabs-2">Hola soy la segunda pestaña</div>
+        <div id="tabs-3">Hola soy la tercera pestaña</div>
+    </div>
+    <hr/>
+
+    <button id="mostrar">Mostrar</button>
+    <div class="caja-efectos elemento"></div>
+
+    <div id="elemento-movido" class=""></div>
+    <br>
+    <div id="area"></div>
 
     <ul class="lista-seleccionable">
         <li>GTA 5</li>
