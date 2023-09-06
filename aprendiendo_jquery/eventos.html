@@ -4,26 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/02-eventos.js"></script>
+    <style>
+        #caja {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: yellow;
+            transition: 300ms all;
+        }
+
+        /* #caja:hover {
+            background-color: red;
+            cursor: pointer;
+        } */
+
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        #datos {
+            margin-top: 10px;
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            display: none;
+        }
+
+        #sigueme {
+            width: 25px;
+            height: 25px;
+            background-color: rgb(0, 179, 255);
+            position: absolute;
+            opacity: 0.5;
+            border: 3px solid black;
+            border-radius: 999px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery con Victor Robles WEB - Eventos</h1>
-    <ul>
-        <li><a href="https://www.google.com" title="Google">Ir a Google</a></li>
-        <li><a href="https://www.facebook.com" title="Facebook">Ir a Facebook</a></li>
-    </ul>
 
-    <p id="rojo" class="sin_borde">Soy un párrafo rojo</p>
-    <p id="amarillo" class="zebra">Soy un párrafo amarillo</p>
-    <p id="verde" class="sin_borde">Soy un párrafo verde</p>
-    <p class="zebra">Soy un párrafo blanco</p>
+    <div id="sigueme"></div>
+    <form>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+    </form>
+
+    <div id="datos"></div>
+
+    <br>
 
     <div id="caja">
-        <p>Hola soy una caja</p>
-        <ul>
-            <li>Elemento 1</li>
-            <li id="elemento2">Elemento 2</li>
-        </ul>
+        Soy una caja
     </div>
-    <span class="resaltado">Soy un span</span>
 </body>
 </html>
