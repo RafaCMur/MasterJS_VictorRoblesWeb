@@ -1,0 +1,17 @@
+
+body {
+    background: url('../img/cielo.jpg');
+    background-attachment: fixed;
+}
+
+#logo {
+    background-color: var(--color-primario);
+}
+
+#menu ul li:hover {
+    background-color: var(--color-primario);
+}
+
+.button-more {
+    background-color: var(--color-primario);
+}

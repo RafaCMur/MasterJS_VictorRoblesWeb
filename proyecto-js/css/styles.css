@@ -1,3 +1,6 @@
+@import 'variables.css';
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -18,7 +21,7 @@ body {
     width: 65%;
     margin: 0px auto;
     margin-top: 30px;
-    padding: 20px;
+    padding: 25px;
     background-color: white;
     box-shadow: 0px 0px 2px #ccc;
 }
@@ -111,4 +114,101 @@ body {
     width: 70px;
     float: right;
     margin-bottom: 20px;
+}
+
+#sidebar {
+    width: 31%;
+    float: right;
+    font-family: Helvetica, Arial;
+}
+
+#sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url('../img/lines.png');
+}
+
+#sidebar h4 span {
+    background-color: white;
+    padding: 5px;
+}
+
+#sidebar img {
+    width: 100%
+}
+
+#sidebar p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: var(--gris-oscuro-translucido);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;  /*Esto es lo que podía haber usado en wa.works en lo del MUI drawer*/
+}
+
+#selector-theme {
+    position: fixed;
+    top: 40%;
+    background-color: var(--gris-oscuro-translucido);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#to-green {
+    background-color: var(--verde);
+}
+
+#to-red {
+    background-color: var(--rojo);
+}
+
+#to-blue {
+    background-color: var(--azul);
 }
