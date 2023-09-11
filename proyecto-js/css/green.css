@@ -1,4 +1,4 @@
-
+@import 'variables.css';
 
 
 body {
@@ -7,13 +7,13 @@ body {
 }
 
 #logo {
-    background-color: var(--color-primario);
+    background-color: var(--verde);
 }
 
 #menu ul li:hover {
-    background-color: var(--color-primario);
+    background-color: var(--verde);
 }
 
 .button-more {
-    background-color: var(--color-primario);
+    background-color: var(--verde);
 }

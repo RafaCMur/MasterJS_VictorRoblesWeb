@@ -1,3 +1,4 @@
+@import 'variables.css';
 
 body {
     background: url('../img/cielo.jpg');
@@ -5,13 +6,13 @@ body {
 }
 
 #logo {
-    background-color: var(--color-primario);
+    background-color: var(--azul);
 }
 
 #menu ul li:hover {
-    background-color: var(--color-primario);
+    background-color: var(--azul);
 }
 
 .button-more {
-    background-color: var(--color-primario);
+    background-color: var(--azul);
 }
