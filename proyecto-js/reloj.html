@@ -9,22 +9,18 @@
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />  <!-- Tema por defecto -->
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" /> <!-- Tema por defecto -->
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!-- Moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
 
     <!-- Mis Scripts -->
-    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/reloj.js"></script>
 </head>
 
 
@@ -35,7 +31,7 @@
         <div id="to-red"></div>
         <div id="to-blue"></div>
     </div>
-    
+
     <section id="global">
 
         <!-- Cabecera -->
@@ -56,27 +52,19 @@
         </header>
 
 
-        <!-- Slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="Hojas" /></div>
-                <div><img src="img/rojo.jpg" title="Rojo" /></div>
-                <div><img src="img/cielo.jpg" title="Cielo" /></div>
-            </div>
-        </div>
-
-
         <!-- Contenido -->
         <section id="content">
-            <div id="posts">
-
+            <div id="box">
+                <!-- Cargar reloj -->
+                <div id="reloj"></div>
             </div>
-            
+
             <aside id="sidebar">
                 <div id="about">
                     <h4><span>¿Quién soy?</span></h4>
                     <img src="img/caracol.jpg" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie massa sed felis rutrum tempor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie massa sed felis rutrum
+                        tempor.</p>
                 </div>
 
                 <div id="login">
@@ -85,7 +73,7 @@
                         <label for="name">
                             Nombre
                         </label>
-                        <input type="text" name="name" id="form_name"/>
+                        <input type="text" name="name" id="form_name" />
 
                         <label for="email">
                             Correo
