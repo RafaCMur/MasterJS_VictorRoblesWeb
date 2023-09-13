@@ -1,7 +1,20 @@
 <!-- Toolbar -->
-<div>
+<div [ngStyle]="{
+                'background-color': config.fondo,
+                'padding': '20px',
+                'margin-top': '20px',
+                'border': '5px solid black',
+                'border-color': config.color
+              }">
   <h1>Bienvenido al {{ title }}!</h1>
   <p>Vamos a ver Angular juntos</p>
+
+  <!-- <button (click)="showVideojuegos(false)" *ngIf="mostrarVideojuegos">Ocultar videojuegos</button>
+  <button (click)="showVideojuegos(true)"*ngIf="!mostrarVideojuegos">Mostrar videojuegos</button>
+
+  <videojuego *ngIf="mostrarVideojuegos"></videojuego>
+  <cursos></cursos> -->
+  <zapatillas></zapatillas>
 </div>
 
 <router-outlet></router-outlet>
