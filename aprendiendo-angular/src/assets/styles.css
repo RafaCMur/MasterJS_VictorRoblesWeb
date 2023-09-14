@@ -11,3 +11,8 @@
 .subrayado {
     text-decoration: underline;
 }
+
+.active {
+    background-color: #ccc;
+    border: 3px solid yellow;
+}

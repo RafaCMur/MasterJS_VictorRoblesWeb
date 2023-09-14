@@ -7,14 +7,30 @@
                 'border-color': config.color
               }">
   <h1>Bienvenido al {{ title }}!</h1>
-  <p>Vamos a ver Angular juntos</p>
+  <p>{{descripcion}}</p>
+
+
+  <nav>
+    <a routerLink="/home" routerLinkActive="active">Inicio</a>
+    &nbsp; <!-- Espacio de separacion -->
+    <a routerLink="/zapatillas" routerLinkActive="active">Zapatillas</a>
+    &nbsp;
+    <a routerLink="/cursos" routerLinkActive="active">Cursos</a>
+    &nbsp;
+    <a routerLink="/videojuego" routerLinkActive="active">Videojuego</a>
+    &nbsp;
+  </nav>
+
+  <hr>
 
   <!-- <button (click)="showVideojuegos(false)" *ngIf="mostrarVideojuegos">Ocultar videojuegos</button>
   <button (click)="showVideojuegos(true)"*ngIf="!mostrarVideojuegos">Mostrar videojuegos</button>
 
   <videojuego *ngIf="mostrarVideojuegos"></videojuego>
   <cursos></cursos> -->
-  <zapatillas></zapatillas>
+
+  <!-- <zapatillas></zapatillas> -->
+
+  <router-outlet></router-outlet>  <!-- Aqui se carga el componente que seleccione yo mediante la URL -->
 </div>
 
-<router-outlet></router-outlet>
