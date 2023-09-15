@@ -1,4 +1,4 @@
-export var Configuracion = {
+export const Configuracion = {
     color: "red",
     fondo: "#eee",
     titulo: "Aplicación con Angular",
