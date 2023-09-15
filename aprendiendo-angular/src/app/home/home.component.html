@@ -1,1 +1,16 @@
-<p>home works!</p>
+
+
+<h2>Pagina principal</h2>
+
+<div *ngIf="identificado; then siIdentificado else noIdentificado"></div>
+
+<ng-template #siIdentificado>
+    <h3>Estás identificado en la aplicación</h3>
+    <button (click)="setIdentificado()">Borrar Identificacion</button>
+</ng-template>
+
+<ng-template #noIdentificado>
+    <p>No estás identificado, pulsa este botón para identificarte</p>
+    <button (click)="setIdentificado()">Identificarse</button>
+    <h3>Debes iniciar sesión para ver el contenido</h3>
+</ng-template>

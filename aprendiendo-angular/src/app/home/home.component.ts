@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public identificado: boolean;
+
+  constructor() {
+    this.identificado = false;
+  }
+
+  setIdentificado() {
+    this.identificado = !this.identificado;
+  }
 }

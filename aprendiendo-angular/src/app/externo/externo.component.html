@@ -1,0 +1,16 @@
+
+{{fecha | date:'dd/MM/yy'}} <br/>
+{{fecha | date:'fullDate' | uppercase}} <br/>
+{{'HOLA MUNDO USANDO PIPES' | lowercase}}
+{{80 | calculadora: 2}}
+<hr/>
+
+<input type="text" [(ngModel)]="userId" (keyup.enter)="cargaUsuario()"/>
+
+<div *ngIf="!user">
+    Cargando usuario...
+</div>
+<div *ngIf="user">
+    <img [src]="user.avatar" alt="Avatar" />
+    <h2>{{user.first_name + ' ' + user.last_name}}</h2>
+</div>
