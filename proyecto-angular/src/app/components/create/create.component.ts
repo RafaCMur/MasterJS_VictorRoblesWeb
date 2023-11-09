@@ -13,18 +13,21 @@ export class CreateComponent {
   public title: string;
   public project: Project;
   public status: string = '';
+  public save_project: Project;
 
   constructor(
     private _projectService: ProjectService
   ) {
     this.title = "Crear proyecto";
     this.project = new Project('', '', '', '', 2023, '', '');
+    this.save_project = new Project('', '', '', '', 2020, '', '');
   }
 
   onSubmit(form: any) {
     this._projectService.saveProject(this.project).subscribe({
       next: (response) => {
         if (response.project) {
+          this.save_project = response.project;
           this.status = 'success';
           form.reset();
         }
