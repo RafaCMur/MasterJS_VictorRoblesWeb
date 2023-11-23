@@ -17,6 +17,7 @@ export class DetailComponent {
 
   constructor(
     private _projectService: ProjectService,
+    private _router: Router,
     private _route: ActivatedRoute
   ) {
     this.url = GLOBAL.url;
@@ -34,6 +35,19 @@ export class DetailComponent {
     this._projectService.getProject(id).subscribe({
       next: (response) => {
         this.project = response.project;
+      },
+      error: (err) => {
+        console.log(<any> err);
+      }
+    });
+  }
+
+  deleteProject(id: string) {
+    this._projectService.deleteProject(id).subscribe({
+      next: (response) => {
+        if (response.project) {
+          this._router.navigate(['/proyectos']);
+        }
       },
       error: (err) => {
         console.log(<any> err);
